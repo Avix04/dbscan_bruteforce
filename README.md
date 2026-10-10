@@ -2,6 +2,7 @@
 
 It has a time complexity of O(n²) and is not recommended for large datasets.
 It uses a flat nested-loop structure for radius searches.
+Works with 2D data only.
 
 ## Prerequisites
 
