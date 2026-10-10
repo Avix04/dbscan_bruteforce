@@ -11,7 +11,7 @@ static double get_squared_distance(double x1, double y1, double x2, double y2) {
 }
 
 // Checks the distance between two points and in case populates the neighbor array, returns the count of indexes in the array
-static int check_points_in_radius(int target_index, int n, double* x_coords, double* y_coords, double epsilon, int* neighbor_indices) {
+static int check_points_in_radius(int target_index, int n, double *x_coords, double *y_coords, double epsilon, int *neighbor_indices) {
   double target_point_x = x_coords[target_index];
   double target_point_y = y_coords[target_index];
 
@@ -34,12 +34,12 @@ static int check_points_in_radius(int target_index, int n, double* x_coords, dou
 }
 
 // Runs the algorithm
-void run_dbscan(int n, double* x_coords, double* y_coords, double epsilon, int min_points, int* labels) {
-  int* visited = (int*)calloc(n, sizeof(int));
-  int* inqueue = (int*)calloc(n, sizeof(int));
+void run_dbscan(int n, double *x_coords, double *y_coords, double epsilon, int min_points, int *labels) {
+  int *visited = (int*)calloc(n, sizeof(int));
+  int *inqueue = (int*)calloc(n, sizeof(int));
 
-  int* queue = (int*)malloc(n * sizeof(int));
-  int* neighbor_indices = (int*)malloc(n * sizeof(int));
+  int *queue = (int*)malloc(n * sizeof(int));
+  int *neighbor_indices = (int*)malloc(n * sizeof(int));
     
   int current_cluster_id = 0;
 
