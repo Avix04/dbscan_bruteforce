@@ -109,23 +109,3 @@ void run_dbscan(int n, double* x_coords, double* y_coords, double epsilon, int m
   free(queue);
   free(neighbor_indices);
 }
-
-/*int main() {
-    int n = 5;
-    double x[] = {1.0, 1.1, 1.2, 8.0, 8.1};
-    double y[] = {1.0, 1.1, 1.0, 8.0, 8.1};
-    
-    // Allocate the labels array filled with 0s
-    int* labels = (int*)calloc(n, sizeof(int));
-
-    // Run your algorithm (epsilon = 0.5, min_pts = 2)
-    run_dbscan(n, x, y, 0.5, 2, labels);
-
-    // Print the results
-    for (int i = 0; i < n; i++) {
-        printf("Point %d (%.1f, %.1f) -> Cluster: %d\n", i, x[i], y[i], labels[i]);
-    }
-
-    free(labels);
-    return 0;
-}*/
