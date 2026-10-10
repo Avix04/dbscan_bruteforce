@@ -50,12 +50,12 @@ if __name__ == "__main__":
     # my_eps, my_min_pts = 0.4, 5
     
     # 2. Moons (Interlocking curves)
-    X, _ = make_moons(n_samples=1000, noise=0.05, random_state=42)
-    my_eps, my_min_pts = 0.1, 5
+    # X, _ = make_moons(n_samples=1000, noise=0.05, random_state=42)
+    # my_eps, my_min_pts = 0.1, 5
     
     # 3. Circles (A ring inside a ring)
-    # X, _ = make_circles(n_samples=1000, factor=0.5, noise=0.05, random_state=42)
-    # my_eps, my_min_pts = 0.15, 5
+    X, _ = make_circles(n_samples=1000, factor=0.5, noise=0.05, random_state=42)
+    my_eps, my_min_pts = 0.15, 5
 
     # -------------------------
 

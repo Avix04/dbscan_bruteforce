@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
 
 // Don't use pow for performance optimization
 // Get the squared distance of two points to then be compared with epsilon squared
